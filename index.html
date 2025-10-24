@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sripada Venkata Pradyumna - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Simple scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9; /* gray-100 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6; /* blue-500 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb; /* blue-600 */
+        }
+        /* Add padding to scrolled sections to account for sticky header */
+        section {
+            padding-top: 80px;
+            margin-top: -64px; /* Offset by header height */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white/95 backdrop-blur-sm shadow-md sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+                S. V. Pradyumna
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="font-medium text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                <a href="#resume" class="font-medium text-gray-600 hover:text-blue-600 transition-colors">Resume</a>
+                <a href="#projects" class="font-medium text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+                <a href="#publications" class="font-medium text-gray-600 hover:text-blue-600 transition-colors">Publications</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+                    Contact
+                </a>
+            </div>
+            <div class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-700"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+
+        <section id="home" class="min-h-screen flex items-center justify-center -mt-16"> <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="md:w-2/3">
+                    <span class="font-semibold text-blue-600 text-lg">Hello, I'm</span>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mt-2">
+                        Sripada Venkata Pradyumna
+                    </h1>
+                    <p class="text-2xl md:text-3xl font-medium text-gray-700 mt-4">
+                        Data Scientist & AI/ML Researcher
+                    </p>
+                    <p class="text-lg text-gray-600 mt-6 max-w-xl leading-relaxed">
+                        MS in Data Science @ UC San Diego. Passionate about building high-impact data solutions, from LLM-driven AI pipelines to large-scale fraud detection models.
+                    </p>
+                    <div class="flex gap-4 mt-8">
+                        <a href="https://linkedin.com/in/svpradyumna" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition-colors" title="LinkedIn">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="https://github.com/Pradyumna-SV" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition-colors" title="GitHub">
+                            <span class="sr-only">GitHub</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-1.5 6-6.5a5.5 5.5 0 0 0-1.5-4A5.23 5.23 0 0 0 18 2H6a5.23 5.23 0 0 0-1 2.5A5.5 5.5 0 0 0 3.5 9c0 5 3 6.5 6 6.5a4.8 4.8 0 0 0-1 3.5v4"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex justify-center md:justify-end">
+                    <img src="IMG-20230617-WA0003.jpg" alt="Sripada Venkata Pradyumna" class="rounded-full shadow-2xl w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-white">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="text-4xl font-bold text-gray-900 border-b-4 border-blue-500 pb-3 mb-8 inline-block">
+                About Me
+            </h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    I am a Data Science graduate student at the University of California, San Diego, with a top-ranking Bachelor's in Computer Science. My professional experience bridges advanced academic research with practical, high-impact industry applications.
+                    <br><br>
+                    At <a href="https://drive.google.com/file/d/1HNh-9P_mNm1l0-yKVn0XpgWBEIIXc_if/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">Simpl</a>, I analyzed a $7B portfolio to enhance partial payment conversions and built clustering models to boost fraud detection precision by 6%. During my internship at <a href="https://drive.google.com/file/d/1hp2H0Mqi6rDp-BBWEff-78Ldd2igpSOC/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">IBM Research</a>, I developed an LLM-based log classification pipeline that improved accuracy by 15% over fine-tuned BERT models and created data validation tools to detect synthetic data drift.
+                    <br><br>
+                    I thrive on solving complex problems, whether it's modeling climate risk for the Fiji Development Bank or developing novel architectures for unsupervised person re-identification. I am proficient in Python, SQL, and a wide array of data science and MLOps tools, and I am always eager to learn and apply new technologies to drive meaningful results.
+                </p>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2 class="text-4xl font-bold text-gray-900 border-b-4 border-blue-500 pb-3 mb-8 inline-block">
+                Resume
+            </h2>
+            <div class="bg-white p-12 rounded-xl shadow-lg text-center">
+                <p class="text-lg text-gray-700 mb-6">
+                    For a detailed overview of my experience, education, and skills, please view my full resume.
+                </p>
+                <a href="https://drive.google.com/file/d/1ifArrrkEAUI-Rog0EmaqTlUkqaiXZ86u/view?usp=sharing" target="_blank" rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-3 bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-blue-700 transition-transform transform hover:-translate-y-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    View Resume (PDF)
+                </a>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="text-4xl font-bold text-gray-900 border-b-4 border-blue-500 pb-3 mb-8 inline-block">
+                Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition-all duration-300">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-900">Unsupervised Person Re-Identification</h3>
+                        <p class="mt-2 text-gray-700">Built pairwise semantic similarity scoring and non-parametric GCN to improve unsupervised person re-identification.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PyTorch</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">FAISS</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gray-50">
+                        <a href="https://github.com/Pradyumna-SV/Semantic-Info-PSI" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:text-blue-800 inline-flex items-center gap-2">
+                            View on GitHub <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition-all duration-300">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-900">Climate Risk Modeling for Fiji Dev. Bank</h3>
+                        <p class="mt-2 text-gray-700">Modeled climate events as shock variables in a Monte Carlo simulation to forecast loan portfolio risk under lean-data conditions.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">NumPy</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">SciPy</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gray-50">
+                        <a href="https://drive.google.com/file/d/1oz0Ot6Hfaw-drCGK86u9AYjwwtcISo79/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:text-blue-800 inline-flex items-center gap-2">
+                            View Details <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition-all duration-300">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-900">Covid Time Series Analysis</h3>
+                        <p class="mt-2 text-gray-700">Analyzed COVID-19 death data and visualized seasonality trends using Python time-series methods.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Scikit-Learn</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gray-50">
+                        <a href="https://github.com/Pradyumna-SV/Covid-Time-Series" target="_blank" rel="noopener noreferrer" class="font-medium text-blue-600 hover:text-blue-800 inline-flex items-center gap-2">
+                            View on GitHub <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="publications">
+            <h2 class="text-4xl font-bold text-gray-900 border-b-4 border-blue-500 pb-3 mb-8 inline-block">
+                Publications
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-900">Comparative Analysis and Fine-Tuning of Deep Learning Architectures for Unsupervised Person Re-Identification</h3>
+                    <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-2">
+                        <span class="text-gray-600 font-medium">First Author | ICCCT 2025 (Springer LNNS)</span>
+                        <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Best Paper Award</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1vWS80qHKDO1pE0jYCs-kkubMg-Gep0lc/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-blue-600 hover:underline mt-3 font-medium">
+                        View Publication
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-900">Quantum Computing: Comparing Standard Algorithm Performance, Applications and Relevance of Digital Twins in Healthcare</h3>
+                    <p class="text-gray-600 mt-2 font-medium">First Author | ICTIS 2025 (Springer LNNS)</p>
+                    <a href="https://drive.google.com/file/d/15nOb86cwhYc8q9CNGU1m0dC6A25fK0fA/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-blue-600 hover:underline mt-3 font-medium">
+                        View Publication
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="text-4xl font-bold text-gray-900 border-b-4 border-blue-500 pb-3 mb-8 inline-block">
+                Get in Touch
+            </h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    I'm always open to discussing new projects, research collaborations, or opportunities. Feel free to reach out!
+                </p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mt-8">
+                    <a href="mailto:svpradyumna01@gmail.com" class="font-medium text-lg text-gray-800 hover:text-blue-600 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        svpradyumna01@gmail.com
+                    </a>
+                    <div class="font-medium text-lg text-gray-800 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        San Diego, California
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center mt-12 py-8 border-t border-gray-300">
+        <p class="text-gray-500 text-sm">© 2025 Sripada Venkata Pradyumna. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
